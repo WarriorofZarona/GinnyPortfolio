@@ -6,7 +6,7 @@ function TopBar() {
 
     return (
         <Container className="topBar">
-            <div>Ginny GreyBill
+            <div className="logo">Ginny GreyBill
         </div>
         </Container>
     )
