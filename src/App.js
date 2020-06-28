@@ -1,11 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import TopBar from './components/TopBar'
+import TopBar from './components/TopBar';
+import SideBar from './components/SideBar';
 
 function App() {
   return (
-    <TopBar />
+    <div>
+      <TopBar />
+      <SideBar />
+    </div>
   );
 }
 

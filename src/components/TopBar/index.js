@@ -1,14 +1,14 @@
 import React from 'react';
 import './style.css'
-import { Container } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
 function TopBar() {
 
     return (
-        <Container className="topBar">
+        <Navbar className="top-bar fixed-top">
             <div className="logo">Ginny GreyBill
         </div>
-        </Container>
+        </Navbar>
     )
 }
 
