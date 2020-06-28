@@ -5,11 +5,25 @@
     position: fixed;
 }
 
-.nav {
+.nav, .icons {
     color: white;
+}
+
+.nav {
     font-size: 20px;
     position: relative;
     top: 20px;
     left: 15px;
     margin: 10px;
+}
+
+.icons {
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+    align-items: flex-end;
+}
+
+.icon-item {
+    margin-right: 15px;
 }

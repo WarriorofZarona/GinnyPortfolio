@@ -1,13 +1,13 @@
 import React from 'react';
 import './style.css'
-import { Navbar } from 'react-bootstrap';
+import { Navbar, Col } from 'react-bootstrap';
 
 function TopBar() {
 
     return (
         <Navbar className="top-bar fixed-top">
-            <div className="logo">Ginny GreyBill
-        </div>
+            <Col className="logo">Ginny GreyBill
+        </Col>
         </Navbar>
     )
 }
