@@ -1,7 +1,9 @@
 .top-bar {
     background-image: linear-gradient(to right, #CE377A, #E37A5C);
-    height: 100px;
+    height: 95px;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .logo {
