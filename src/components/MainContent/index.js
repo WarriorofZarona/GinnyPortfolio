@@ -5,7 +5,7 @@ import { Container, Row } from 'react-bootstrap';
 function MainContent() {
 
     return (
-        <Container fluid>
+        <Container fluid className="main-content">
             <Row>
                 <h1>Graphic Design</h1>
                 <hr />

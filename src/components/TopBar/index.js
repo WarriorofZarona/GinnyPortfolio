@@ -6,7 +6,7 @@ function TopBar() {
 
     return (
         <Navbar className="top-bar fixed-top">
-            <Col className="logo">Ginny Graybill
+            <Col md="auto" className="logo">Ginny Graybill
         </Col>
         </Navbar>
     )

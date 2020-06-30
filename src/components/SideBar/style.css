@@ -3,7 +3,7 @@
     width: 200px;
     height: 100%;
     position: fixed;
-    top: 15%;
+    top: 95px;
     bottom: 0;
     left: 0;
 }
@@ -25,7 +25,7 @@
     font-size: 30px;
     margin: 30px;
     position: absolute;
-    bottom: 15%;
+    bottom: 12%;
 }
 
 .icon-item {
