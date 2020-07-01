@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css'
 import { Navbar, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function TopBar() {
 
