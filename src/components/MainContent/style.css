@@ -1,9 +1,15 @@
-.main-content {
+.gallery {
     position: absolute;
-    top: 95px;
-    left: 200px;
-    width: 85%;
+    top: 110px;
+    left: 250px;
+    width: 80%;
     height: auto;
     z-index: -1;
     font-size: 24px;
+}
+
+.thumbnail {
+    border: 2px solid;
+    margin: 10px;
+    border-image: linear-gradient(#CE377A, #E37A5C) 27;
 }
