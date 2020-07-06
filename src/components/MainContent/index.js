@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
-import Portrait from '../../assets/images/1.jpg'
+import Portrait from '../../assets/images/6.jfif'
 import Landscape from '../../assets/images/VirginiaGraybill_BeercanMockup2.jpg'
 
 function MainContent() {
 
     const [image, setImage] = useState({
-        src: Landscape,
-        orientation: "landscape",
+        src: Portrait,
+        orientation: "portrait",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a neque lectus. Nunc euismod velit convallis, hendrerit enim quis, porttitor est. Aliquam et luctus metus. Morbi in tristique lorem. Maecenas ullamcorper quam lectus, id molestie nunc tincidunt quis. Nulla facilisi. Maecenas vitae vehicula diam, eu fermentum nunc. Aliquam erat volutpat."
     });
 
