@@ -3,7 +3,7 @@
     top: 110px;
     left: 250px;
     width: 80%;
-    height: auto;
+    max-height: 20em;
     z-index: -1;
     font-size: 24px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -17,4 +17,16 @@ img {
 
 h4 {
     margin: 10px;
+}
+
+.portrait {
+    height: auto;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.landscape {
+    height: auto;
+    width: 100%;
+    margin: 10px auto;
 }
