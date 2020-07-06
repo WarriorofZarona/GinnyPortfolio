@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 function MainContent() {
 
     const [image, setImage] = useState({
-        src: "https://via.placeholder.com/350x500?text=portrait",
+        src: "https://via.placeholder.com/350x470?text=portrait",
         orientation: "portrait",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a neque lectus. Nunc euismod velit convallis, hendrerit enim quis, porttitor est. Aliquam et luctus metus. Morbi in tristique lorem. Maecenas ullamcorper quam lectus, id molestie nunc tincidunt quis. Nulla facilisi. Maecenas vitae vehicula diam, eu fermentum nunc. Aliquam erat volutpat."
     });
@@ -35,7 +35,7 @@ function MainContent() {
                     </Container>
                 </Col>
 
-                <Col>
+                <Col md={9}>
                     {image.orientation === "portrait" ?
                         <Container fluid className="focused-image">
                             <Row>

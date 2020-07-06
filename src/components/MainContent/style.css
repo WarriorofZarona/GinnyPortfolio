@@ -6,10 +6,15 @@
     height: auto;
     z-index: -1;
     font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.thumbnail {
+img {
     border: 2px solid;
     margin: 10px;
     border-image: linear-gradient(#CE377A, #E37A5C) 27;
+}
+
+h4 {
+    margin: 10px;
 }
