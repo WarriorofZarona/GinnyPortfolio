@@ -11,18 +11,17 @@
     padding: 48px 0 0;
 }
 
-.nav-item, .icon-item {
+.nav-link, .icon-item {
     color: white;
 }
 
 .nav-item {
     font-size: 20px;
     position: relative;
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .icons {
-    color: white;
     font-size: 30px;
     margin: 30px;
     position: fixed;

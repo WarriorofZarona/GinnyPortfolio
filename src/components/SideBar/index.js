@@ -10,7 +10,7 @@ function SideBar() {
 
 
             <Nav.Item className='nav-item'>
-                <Nav.Link href='/graphic-design'>
+                <Nav.Link className="nav-link" href='/graphic-design'>
                     Graphic Design</Nav.Link>
             </Nav.Item>
             <Nav.Item className='nav-item'>
