@@ -1,7 +1,7 @@
 .sidebar {
     background-color: #BA86D0;
     width: 200px;
-    min-height: 95vh !important;
+    min-height: 9vh !important;
     position: fixed;
     top: 95px;
     bottom: 0;
@@ -11,14 +11,13 @@
     padding: 48px 0 0;
 }
 
-.nav, .icons {
+.nav-item, .icon-item {
     color: white;
 }
 
-.nav {
+.nav-item {
     font-size: 20px;
     position: relative;
-    top: 20px;
     margin: 10px;
 }
 
@@ -26,8 +25,8 @@
     color: white;
     font-size: 30px;
     margin: 30px;
-    position: absolute;
-    bottom: 12%;
+    position: fixed;
+    bottom: 1%;
 }
 
 .icon-item {
