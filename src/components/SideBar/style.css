@@ -1,12 +1,14 @@
-.side-bar {
+.sidebar {
     background-color: #BA86D0;
     width: 200px;
-    height: 100%;
+    min-height: 95vh !important;
     position: fixed;
     top: 95px;
     bottom: 0;
     left: 0;
     font-family: 'Amaranth';
+    z-index: 100;
+    padding: 48px 0 0;
 }
 
 .nav, .icons {

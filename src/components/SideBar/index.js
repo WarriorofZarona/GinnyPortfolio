@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.css'
-import { Container, Row } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function SideBar() {
 
     return (
-        <Container fluid className='side-bar'>
+        <Nav fluid className='col-md-12 d-none d-md-block sidebar'>
             <div className="nav">Graphic Design</div>
             <div className="nav">Digital Artwork</div>
             <div className="nav">Paintings</div>
@@ -14,12 +14,10 @@ function SideBar() {
             <div className="nav">Emotes</div>
             <div className="nav">About Me</div>
             <div className="nav">Contact</div>
-            <Row className="icons fixed-bottom">
-                <i className="fab fa-instagram icon-item"></i>
-                <i className="fab fa-twitter icon-item"></i>
-                <i className="fab fa-behance icon-item"></i>
-            </Row>
-        </Container >
+            <i className="fab fa-instagram icon-item"></i>
+            <i className="fab fa-twitter icon-item"></i>
+            <i className="fab fa-behance icon-item"></i>
+        </Nav >
     )
 }
 
