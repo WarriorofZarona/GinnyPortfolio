@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css'
-import { Nav, Row } from 'react-bootstrap';
+import { Nav, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function SideBar() {
@@ -39,9 +39,15 @@ function SideBar() {
             </Nav.Item>
 
             <Row className='icons'>
-                <i className="fab fa-instagram icon-item"></i>
-                <i className="fab fa-twitter icon-item"></i>
-                <i className="fab fa-behance icon-item"></i>
+                <Col>
+                    <Nav.Link href='https://www.instagram.com/ginnygravity/?hl=en'><i className="fab fa-instagram"></i></Nav.Link>
+                </Col>
+                <Col>
+                    <Nav.Link href='https://twitter.com/ginnygravity'><i className="fab fa-twitter"></i></Nav.Link>
+                </Col>
+                <Col>
+                    <Nav.Link href='https://www.behance.net/virginigraybil'><i className="fab fa-behance"></i></Nav.Link>
+                </Col>
             </Row>
         </Nav >
     )
