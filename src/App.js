@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import TopBar from './components/TopBar';
 import SideBar from './components/SideBar';
@@ -10,9 +10,11 @@ function App() {
 
   const [gallery, setGallery] = useState([]);
 
-  const fetchGallery = async category => {
+  useEffect(() => fetchGallery('graphic design'), []);
+
+  const fetchGallery = category => {
     const array = images.filter(image => image.category === category)
-    await setGallery(array);
+    setGallery(array);
   }
 
   return (

@@ -6,6 +6,8 @@ import { images } from '../../utils/db.js';
 
 function MainContent(props) {
 
+    const gallery = props.gallery;
+
     const [image, setImage] = useState({
         src: images[8].src,
         orientation: images[8].orientation,
@@ -19,7 +21,7 @@ function MainContent(props) {
                 <Row>
                     <Col lg={3}>
                         <Container id="graphic-design">
-                            <Row>
+                            {/* <Row>
                                 <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
                                 <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
                             </Row>
@@ -34,7 +36,14 @@ function MainContent(props) {
                             <Row>
                                 <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
                                 <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
-                            </Row>
+                            </Row> */}
+                            {gallery.reduce(
+                                function (accumulator, currentValue, currentIndex, array) {
+                                    if (currentIndex % 2 === 0)
+                                        accumulator.push(array.slice(currentIndex, currentIndex + 2));
+                                    return accumulator;
+                                }, []).map(p => (console.log(p[0], p[1])))}
+
                         </Container>
                     </Col>
 
