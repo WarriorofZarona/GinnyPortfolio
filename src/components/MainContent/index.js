@@ -1,27 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
 import { images } from '../../utils/db.js';
 
-function MainContent() {
-
-    const [gallery, setGallery] = useState([]);
+function MainContent(props) {
 
     const [image, setImage] = useState({
         src: images[8].src,
-        link: "#",
-        orientation: "landscape",
-        category: "",
+        orientation: images[8].orientation,
+        category: images[8].category,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a neque lectus. Nunc euismod velit convallis, hendrerit enim quis, porttitor est. Aliquam et luctus metus. Morbi in tristique lorem. Maecenas ullamcorper quam lectus, id molestie nunc tincidunt quis. Nulla facilisi. Maecenas vitae vehicula diam, eu fermentum nunc. Aliquam erat volutpat."
     });
-
-    const fetchGallery = category => {
-        const array = images.filter(image => image.category === category)
-        setGallery(array);
-    }
-
-
 
     return (
         <Col>
