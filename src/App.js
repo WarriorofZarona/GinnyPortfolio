@@ -10,10 +10,10 @@ function App() {
 
   const [gallery, setGallery] = useState([]);
 
-  // const fetchGallery = category => {
-  //   const array = images.filter(image => image.category === category)
-  //   setGallery(array);
-  // }
+  const fetchGallery = async category => {
+    const array = images.filter(image => image.category === category)
+    await setGallery(array);
+  }
 
   return (
     <div>
@@ -21,7 +21,7 @@ function App() {
       <Container fluid>
         <Row>
           <SideBar
-          // fetchGallery={fetchGallery} 
+            fetchGallery={fetchGallery}
           />
           <MainContent gallery={gallery} />
         </Row>

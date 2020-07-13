@@ -5,16 +5,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function SideBar(props) {
 
-    // const fetch = props.fetchGallery;
-
     return (
         <Col md={3} lg={2}>
             <Nav fluid className='col-lg-12 d-none d-lg-block sidebar'>
                 <Nav.Item className='nav-item'>
-                    <Nav.Link className="nav-link" href='/graphic-design'
-                    // onClick={fetch('graphic design')}
+                    <Nav.Link
+                        onClick={() => props.fetchGallery('graphic design')}
                     >
-                        Graphic Design</Nav.Link>
+                        Graphic Design
+                </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className='nav-item'>
                     <Nav.Link href='/digital-artwork'>
@@ -45,7 +44,7 @@ function SideBar(props) {
                     </Col>
                 </Row>
             </Nav >
-        </Col>
+        </Col >
     )
 }
 
