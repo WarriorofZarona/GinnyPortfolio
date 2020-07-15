@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './style.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
 import { images } from '../../utils/db.js';
+import GalleryContext from '../../utils/GalleryContext'
 
 function MainContent(props) {
 
-    const gallery = props.gallery;
+    const gallery = useContext(GalleryContext)
 
     const [image, setImage] = useState({
         src: images[8].src,

@@ -5,12 +5,13 @@ import SideBar from './components/SideBar';
 import MainContent from './components/MainContent';
 import { Container, Row } from 'react-bootstrap';
 import { images } from './utils/db'
+import GalleryContext from './utils/GalleryContext'
 
 function App() {
 
   const [gallery, setGallery] = useState([]);
 
-  useEffect(() => fetchGallery('graphic design'), []);
+  useEffect(() => fetchGallery('digital artwork'), []);
 
   const fetchGallery = category => {
     const array = images.filter(image => image.category === category)
@@ -25,7 +26,9 @@ function App() {
           <SideBar
             fetchGallery={fetchGallery}
           />
-          <MainContent gallery={gallery} />
+          <GalleryContext.Provider value={gallery}>
+            <MainContent />
+          </GalleryContext.Provider>
         </Row>
       </Container>
     </div>

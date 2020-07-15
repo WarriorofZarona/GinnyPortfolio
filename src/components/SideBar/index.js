@@ -16,7 +16,8 @@ function SideBar(props) {
                 </Nav.Link>
                 </Nav.Item>
                 <Nav.Item className='nav-item'>
-                    <Nav.Link href='/digital-artwork'>
+                    <Nav.Link
+                        onClick={() => props.fetchGallery('digital artwork')}>
                         Digital Artwork</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className='nav-item'>
