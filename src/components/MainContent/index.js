@@ -15,35 +15,26 @@ function MainContent(props) {
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a neque lectus. Nunc euismod velit convallis, hendrerit enim quis, porttitor est. Aliquam et luctus metus. Morbi in tristique lorem. Maecenas ullamcorper quam lectus, id molestie nunc tincidunt quis. Nulla facilisi. Maecenas vitae vehicula diam, eu fermentum nunc. Aliquam erat volutpat."
     });
 
+    const rows = gallery.reduce(function (rows, key, index) {
+        return (index % 2 == 0 ? rows.push([key])
+            : rows[rows.length - 1].push(key)) && rows;
+    }, []);
+
+    console.log(rows);
+
     return (
         <Col>
             <Container fluid className="gallery">
                 <Row>
                     <Col lg={3}>
-                        <Container id="graphic-design">
-                            {/* <Row>
-                                <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
-                                <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
-                            </Row>
-                            <Row>
-                                <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
-                                <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
-                            </Row>
-                            <Row>
-                                <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
-                                <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
-                            </Row>
-                            <Row>
-                                <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
-                                <Col><img className="thumbnail" src="https://via.placeholder.com/100" /></Col>
-                            </Row> */}
-                            {gallery.reduce(
-                                function (accumulator, currentValue, currentIndex, array) {
-                                    if (currentIndex % 2 === 0)
-                                        accumulator.push(array.slice(currentIndex, currentIndex + 2));
-                                    return accumulator;
-                                }, []).map(p => (console.log(p[0], p[1])))}
-
+                        <Container>
+                            {!gallery ? <h1>Nothing here!</h1> :
+                                rows.map(row => (
+                                    <Row id>
+                                        {row.map(col => (<Col key={col.id}><img src={col.thumbnail} /></Col>))}
+                                    </Row>
+                                ))
+                            }
                         </Container>
                     </Col>
 
@@ -68,7 +59,7 @@ function MainContent(props) {
                     </Col>
                 </Row>
             </Container >
-        </Col>
+        </Col >
     )
 
 };
