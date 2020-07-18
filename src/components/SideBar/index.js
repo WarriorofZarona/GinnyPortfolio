@@ -21,7 +21,8 @@ function SideBar(props) {
                         Digital Artwork</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className='nav-item'>
-                    <Nav.Link href='/social-media-assets'>
+                    <Nav.Link
+                        onClick={() => props.fetchGallery('social media assets')}>
                         Social Media Assets</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className='nav-item'>
