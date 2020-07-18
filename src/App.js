@@ -23,10 +23,10 @@ function App() {
       <TopBar />
       <Container fluid>
         <Row>
-          <SideBar
-            fetchGallery={fetchGallery}
-          />
           <GalleryContext.Provider value={gallery}>
+            <SideBar
+              fetchGallery={fetchGallery}
+            />
             <MainContent />
           </GalleryContext.Provider>
         </Row>
