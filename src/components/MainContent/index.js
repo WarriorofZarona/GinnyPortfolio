@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { images } from '../../utils/db.js';
 import GalleryContext from '../../utils/GalleryContext'
 
-function MainContent(props) {
+function MainContent() {
 
     const gallery = useContext(GalleryContext)
 
@@ -27,7 +27,7 @@ function MainContent(props) {
         <Col>
             <Container fluid className="gallery">
                 <Row>
-                    <Col lg={3}>
+                    <Col lg={3} id="thumbnail">
                         <Container>
                             {!gallery ? <h1>Nothing here!</h1> :
                                 rows.map(row => (
