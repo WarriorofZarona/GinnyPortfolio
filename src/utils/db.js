@@ -7,7 +7,11 @@ import {
     portrait6,
     portrait7,
     portrait8,
-    landscape1
+    landscape1,
+    portrait6tb,
+    portrait7tb,
+    portrait8tb,
+    landscape1tb
 } from '../assets/images/'
 
 export const images = [{
@@ -59,7 +63,7 @@ export const images = [{
     orientation: 'portrait',
     category: 'digital artwork',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula, quam a blandit porta, sem neque accumsan ipsum, ut varius elit nulla varius ligula. Curabitur ullamcorper massa quis metus euismod imperdiet. Sed ac consequat metus. Vestibulum et iaculis ipsum. Nullam aliquet condimentum ex nec aliquam.',
-    thumbnail: "https://via.placeholder.com/100?text=portrait6"
+    thumbnail: portrait6tb
 },
 {
     id: 6,
@@ -67,7 +71,7 @@ export const images = [{
     orientation: 'portrait',
     category: 'digital artwork',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula, quam a blandit porta, sem neque accumsan ipsum, ut varius elit nulla varius ligula. Curabitur ullamcorper massa quis metus euismod imperdiet. Sed ac consequat metus. Vestibulum et iaculis ipsum. Nullam aliquet condimentum ex nec aliquam.',
-    thumbnail: "https://via.placeholder.com/100?text=portrait7"
+    thumbnail: portrait7tb
 
 },
 {
@@ -76,7 +80,7 @@ export const images = [{
     orientation: 'portrait',
     category: 'graphic design',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula, quam a blandit porta, sem neque accumsan ipsum, ut varius elit nulla varius ligula. Curabitur ullamcorper massa quis metus euismod imperdiet. Sed ac consequat metus. Vestibulum et iaculis ipsum. Nullam aliquet condimentum ex nec aliquam.',
-    thumbnail: "https://via.placeholder.com/100?text=portrait8"
+    thumbnail: portrait8tb
 
 },
 {
@@ -85,5 +89,5 @@ export const images = [{
     orientation: 'landscape',
     category: 'graphic design',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula, quam a blandit porta, sem neque accumsan ipsum, ut varius elit nulla varius ligula. Curabitur ullamcorper massa quis metus euismod imperdiet. Sed ac consequat metus. Vestibulum et iaculis ipsum. Nullam aliquet condimentum ex nec aliquam.',
-    thumbnail: "https://via.placeholder.com/100?text=landscape1"
+    thumbnail: landscape1tb
 }];
