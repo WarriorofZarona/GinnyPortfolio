@@ -16,7 +16,7 @@ function MainContent() {
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a neque lectus. Nunc euismod velit convallis, hendrerit enim quis, porttitor est. Aliquam et luctus metus. Morbi in tristique lorem. Maecenas ullamcorper quam lectus, id molestie nunc tincidunt quis. Nulla facilisi. Maecenas vitae vehicula diam, eu fermentum nunc. Aliquam erat volutpat."
     });
 
-    const handleOnClick = id => {
+    const handleOnHover = id => {
         const selectedImg = images.filter(image => image.id === id)
         console.log(selectedImg[0]);
         setImage(selectedImg[0]);
@@ -38,7 +38,7 @@ function MainContent() {
                             {!gallery ? <h1>Nothing here!</h1> :
                                 rows.map(row => (
                                     <Row id>
-                                        {row.map(col => (<Col key={col.id}><img src={col.thumbnail} onClick={() => handleOnClick(col.id)} /></Col>))}
+                                        {row.map(col => (<Col key={col.id}><img src={col.thumbnail} onMouseEnter={() => handleOnHover(col.id)} /></Col>))}
                                     </Row>
                                 ))
                             }
