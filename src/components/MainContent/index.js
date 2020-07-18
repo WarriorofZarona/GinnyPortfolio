@@ -10,11 +10,17 @@ function MainContent() {
     const gallery = useContext(GalleryContext)
 
     const [image, setImage] = useState({
-        src: images[8].src,
-        orientation: images[8].orientation,
-        category: images[8].category,
+        src: images[7].src,
+        orientation: images[7].orientation,
+        category: images[7].category,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a neque lectus. Nunc euismod velit convallis, hendrerit enim quis, porttitor est. Aliquam et luctus metus. Morbi in tristique lorem. Maecenas ullamcorper quam lectus, id molestie nunc tincidunt quis. Nulla facilisi. Maecenas vitae vehicula diam, eu fermentum nunc. Aliquam erat volutpat."
     });
+
+    const handleOnClick = id => {
+        const selectedImg = images.filter(image => image.id === id)
+        console.log(selectedImg[0]);
+        setImage(selectedImg[0]);
+    }
 
     const rows = gallery.reduce(function (rows, key, index) {
         return (index % 2 == 0 ? rows.push([key])
@@ -32,7 +38,7 @@ function MainContent() {
                             {!gallery ? <h1>Nothing here!</h1> :
                                 rows.map(row => (
                                     <Row id>
-                                        {row.map(col => (<Col key={col.id}><img src={col.thumbnail} /></Col>))}
+                                        {row.map(col => (<Col key={col.id}><img src={col.thumbnail} onClick={() => handleOnClick(col.id)} /></Col>))}
                                     </Row>
                                 ))
                             }

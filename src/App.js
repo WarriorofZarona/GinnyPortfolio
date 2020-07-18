@@ -11,7 +11,7 @@ function App() {
 
   const [gallery, setGallery] = useState([]);
 
-  useEffect(() => fetchGallery('digital artwork'), []);
+  useEffect(() => fetchGallery('graphic design'), []);
 
   const fetchGallery = category => {
     const array = images.filter(image => image.category === category)
