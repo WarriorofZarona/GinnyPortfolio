@@ -8,7 +8,7 @@ function TopBar() {
     return (
         <Navbar className="top-bar fixed-top">
             <Row>
-                <Col md="auto" className="logo">Ginny Graybill</Col>
+                <Col className="logo" md="auto">Ginny Graybill</Col>
             </Row>
         </Navbar>
     )
